@@ -1,0 +1,13 @@
+How to compile (if needed):
+- Assume java is on your path
+- Assume you're on windows (change ; to : if on Linux)
+- Assume you have the selenium-server-standalone jar in the same dir as cloned down from my github
+
+javac -cp .;selenium-server-standalone-2.47.1.jar TestPage.java
+javac -cp .;selenium-server-standalone-2.47.1.jar UseCaseDriver.java
+
+How to run:
+- Windows:
+java -cp .;selenium-server-standalone-2.47.1.jar UseCaseDriver
+- Linux
+java -cp .:selenium-server-standalone-2.47.1.jar UseCaseDriver
