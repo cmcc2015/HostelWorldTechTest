@@ -1,0 +1,12 @@
+// NEW string OBJECT is created as opposed to literal "hostleworld" - nothing wrong as yet
+String wordToCheck = new String(name);
+
+// To compound this an object evaluator of == is applied to check if this STRING object
+// with unique underlying hash (regardless of data(string spelling inside)) is == to
+// the object created 'on the fly' by java of literal string "hostleworld" (regardless of spelling)
+// This would always eval to false therefore hitting into the recursively calling fixSpelling inside
+// in the else block
+if(wordToCheck == "hostleworld" ) {
+
+Solution:
+evaluate the two with .equals method
