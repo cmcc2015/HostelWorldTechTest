@@ -1,0 +1,5 @@
+How to compile (if needed):
+javac QuestionOne.javac
+
+How to run:
+java QuestionOne
