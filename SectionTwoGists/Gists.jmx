@@ -29,7 +29,7 @@
           </elementProp>
           <elementProp name="AuthToken" elementType="Argument">
             <stringProp name="Argument.name">AuthToken</stringProp>
-            <stringProp name="Argument.value">${__P(HTTPRequestDefaultDomain,YOUR_TOKEN}</stringProp>
+            <stringProp name="Argument.value">${__P(AuthToken,YOUR_TOKEN}</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
         </collectionProp>
@@ -81,7 +81,7 @@
             </elementProp>
             <elementProp name="" elementType="Header">
               <stringProp name="Header.name">Authorization</stringProp>
-              <stringProp name="Header.value">bearer db93250c16d9299338322a400f2f32c28e792dc1</stringProp>
+              <stringProp name="Header.value">bearer ${AuthToken}</stringProp>
             </elementProp>
           </collectionProp>
         </HeaderManager>
